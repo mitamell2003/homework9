@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>HTML DOM</title>
+</head>
+<body>
+    <div class="container mt-4">
+      <div class="card">
+        <div class="card-title">
+            <h2 id="result-salary">Salary: <span id="result"></span></h2>
+        </div>
+         <input type="number" name="working" id="working-days" placeholder="workingdays" class="form-control"/>
+         <input type="number" name="salary" min="100000" max="500000" class="form-control mt-2"/>
+         <button class="btn btn-sm btn-success mt-2" onclick="handleCalscSalary()">Calculation</button>
+      </div>
+      <div class="card mt-2">
+        <div class="card-body">
+             <div class="row">
+            <div class="col">
+                <input type="number" name="" id="num1" class="from-contol">
+            </div>
+            <div class="col">
+                <input type="number" name="" id="num2" class="from-contol">
+            </div>
+            <div class="col">
+                <input type="number" name="" id="num3" class="from-contol">
+            </div>
+            <div class="col">
+                <input type="number" name="" id="num4" class="from-contol">
+            </div>
+            <div class="col">
+                <input type="number" name="" id="num5" class="from-contol">
+            </div>
+        </div>
+        <button class="btn btn-sm btn-success mt-2"
+         onclick="handleCaclTotalsum()">
+         Calculation
+        </button>
+        <div class="mt-2" id="result-total"></div>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div class="card-body">
+            <label for="inp-dollar">Dollar</label>
+            <input type="number" name="" id="inp-dollar" class="form-control" placeholder="0">
+            <button class="btn btn-sm btn-success mt-2"
+            onclick="handleChangeCurency()">
+            Calculation
+           </button>
+
+           <div id="currency"></div>
+            </div>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div class="card-body" id="items-container">
+            <button class="btn btn-sm btn-success mt-2"
+            onclick="handleCPrintlist()">
+            Print
+           </button>
+            
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   <script src="./index.js"></script>
+</body>
+</html>
